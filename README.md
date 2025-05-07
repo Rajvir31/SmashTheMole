@@ -1,3 +1,4 @@
+# Group 54 - Keith Sarkar, Rajvir Parmar, Eseosa Atekha, Toluwanimi Popoola
 # SmashTheMole
 
 SmashTheMole is a Whac-A-Mole style game built in C++ using SFML 2.x. It features:
