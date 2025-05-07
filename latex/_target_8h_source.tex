@@ -1,0 +1,35 @@
+\doxysection{Target.\+h}
+\hypertarget{_target_8h_source}{}\label{_target_8h_source}\mbox{\hyperlink{_target_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ TARGET\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ TARGET\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_target_a7008d6752ce64f82e56aae6ea6c2bb65}{Target}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_target_a7008d6752ce64f82e56aae6ea6c2bb65}{Target}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_target_a3ab0b293145f2bd87263b576c188a648}{init}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_target_acaba79416d4820ddbcb43db51b7e0b2a}{setNewTarget}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ sf::Sprite\ \&\ \mbox{\hyperlink{class_target_a100c79e93583d85cbcc36c1d374cffc5}{getSprite}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_target_a71892dd21f55f54e22dc4f1163962edf}{isBomb}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ std::unique\_ptr<sf::Sprite>\ sprite;\ }
+\DoxyCodeLine{00050\ \ \ \ \ sf::Texture\ moleTexture;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ sf::Texture\ bombTexture;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ bombFlag;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ std::vector<sf::Vector2f>\ positions;\ \ }
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TARGET\_H}}
+
+\end{DoxyCode}

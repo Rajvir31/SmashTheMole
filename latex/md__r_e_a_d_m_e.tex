@@ -1,0 +1,66 @@
+\chapter{Smash\+The\+Mole}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{SmashTheMole@{SmashTheMole}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+Smash\+The\+Mole is a Whac-\/\+A-\/\+Mole style game built in C++ using SFML 2.\+x. It features\+:
+\begin{DoxyItemize}
+\item A start menu with a custom background.
+\item Gameplay with a separate background image.
+\item Targets (moles and bombs) that appear on a grid.
+\item A custom cursor (whacker) replacing the system mouse cursor.
+\item Dynamic scoring and a countdown timer.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Directory Structure}{Directory Structure}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Assuming your files are organized as follows\+:
+
+Smash\+The\+Mole/ ├── \doxylink{_main_8cpp}{main.\+cpp} ├── \doxylink{_game_8cpp}{Game.\+cpp} ├── \doxylink{_game_8h}{Game.\+h} ├── \doxylink{_menu_8cpp}{Menu.\+cpp} ├── \doxylink{_menu_8h}{Menu.\+h} ├── \doxylink{_target_8cpp}{Target.\+cpp} ├── \doxylink{_target_8h}{Target.\+h} ├── Makefile ├── arial.\+ttf ├── mole.\+png ├── bomb.\+png ├── menu\+\_\+background.\+jpg ├── background.\+jpeg ├── whacker.\+png └── README.\+md
+
+ll asset files (font and images) are in the project’s root directory.\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Building the Game on mac\+OS}{Building the Game on mac\+OS}}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item A C++17 compliant compiler (e.\+g., g++ or clang++).
+\item SFML 2.\+x (Recommended version\+: SFML 2.\+6.\+2). ~\newline
+ Install via Homebrew (sfml@2)\+:
+\begin{DoxyItemize}
+\item brew install sfml@2
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Open Terminal and navigate to your project directory\+:
+\end{DoxyEnumerate}
+
+cd /path/to/\+Smash\+The\+Mole
+
+
+\begin{DoxyEnumerate}
+\item Build the game by running\+:
+\end{DoxyEnumerate}
+
+make
+
+
+\begin{DoxyEnumerate}
+\item Run the game\+:
+\end{DoxyEnumerate}
+
+./\+Smash\+The\+Mole\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Building the Game on Windows}{Building the Game on Windows}}\label{md__r_e_a_d_m_e_autotoc_md4}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item A C++17 compliant compiler (e.\+g., Visual Studio or Min\+GW).
+\item SFML 2.\+x (download from SFML\textquotesingle{}s website).
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Setting Up Your Project}{Setting Up Your Project}}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Create a new project in your IDE (e.\+g., Visual Studio).
+\item Add all source files (\doxylink{_main_8cpp}{main.\+cpp}, \doxylink{_game_8cpp}{Game.\+cpp}, \doxylink{_game_8h}{Game.\+h}, \doxylink{_menu_8cpp}{Menu.\+cpp}, \doxylink{_menu_8h}{Menu.\+h}, \doxylink{_target_8cpp}{Target.\+cpp}, \doxylink{_target_8h}{Target.\+h}) to your project.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Configure your project to\+:}{Configure your project to\+:}}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Include the SFML 2.\+x include directory.
+\item Link against the SFML libraries (sfml-\/graphics, sfml-\/window, sfml-\/system).
+\item Copy all asset files (arial.\+ttf, mole.\+png, bomb.\+png, menu\+\_\+background.\+jpg, background.\+jpeg, whacker.\+png) into your project’s working directory (typically the same folder as the executable).
+\item Build and run your project according to your IDE’s instructions. 
+\end{DoxyItemize}

@@ -1,0 +1,32 @@
+\doxysection{Menu.\+h}
+\hypertarget{_menu_8h_source}{}\label{_menu_8h_source}\mbox{\hyperlink{_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ MENU\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ MENU\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a65a8a8f3a498ad329d845b4ac45ad099}{init}}(\textcolor{keyword}{const}\ sf::Font\ \&font);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a8b085f01f9fd3253fb9d2ed5d2154f64}{drawMenu}}(sf::RenderWindow\ \&window);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a7349041d0f35e1c3de35cd82a889e2c3}{drawGameOver}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ std::unique\_ptr<sf::Text>\ titleText;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ std::unique\_ptr<sf::Text>\ instructionText;\ \ }
+\DoxyCodeLine{00047\ \ \ \ \ std::unique\_ptr<sf::Text>\ gameOverText;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ std::unique\_ptr<sf::Text>\ finalScoreText;\ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ std::unique\_ptr<sf::Text>\ restartText;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MENU\_H}}
+
+\end{DoxyCode}

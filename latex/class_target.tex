@@ -1,0 +1,79 @@
+\doxysection{Target Class Reference}
+\hypertarget{class_target}{}\label{class_target}\index{Target@{Target}}
+
+
+The \doxylink{class_target}{Target} class manages the target sprite (mole or bomb) and its positions.  
+
+
+
+
+{\ttfamily \#include $<$Target.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_target_a7008d6752ce64f82e56aae6ea6c2bb65}{Target}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_target}{Target} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_target_a3ab0b293145f2bd87263b576c188a648}\label{class_target_a3ab0b293145f2bd87263b576c188a648} 
+void {\bfseries init} ()
+\begin{DoxyCompactList}\small\item\em Initializes the target by loading textures and setting initial properties. \end{DoxyCompactList}\item 
+\Hypertarget{class_target_acaba79416d4820ddbcb43db51b7e0b2a}\label{class_target_acaba79416d4820ddbcb43db51b7e0b2a} 
+void {\bfseries set\+New\+Target} ()
+\begin{DoxyCompactList}\small\item\em Sets a new target at a random position and configures its properties. \end{DoxyCompactList}\item 
+const sf\+::\+Sprite \& \mbox{\hyperlink{class_target_a100c79e93583d85cbcc36c1d374cffc5}{get\+Sprite}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current target sprite. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_target_a71892dd21f55f54e22dc4f1163962edf}{is\+Bomb}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the current target is a bomb. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_target}{Target} class manages the target sprite (mole or bomb) and its positions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_target_a7008d6752ce64f82e56aae6ea6c2bb65}\index{Target@{Target}!Target@{Target}}
+\index{Target@{Target}!Target@{Target}}
+\doxysubsubsection{\texorpdfstring{Target()}{Target()}}
+{\footnotesize\ttfamily \label{class_target_a7008d6752ce64f82e56aae6ea6c2bb65} 
+Target\+::\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_target}{Target} object. 
+
+\texorpdfstring{$<$}{<} Horizontal offset.
+
+\texorpdfstring{$<$}{<} Vertical offset.
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_target_a100c79e93583d85cbcc36c1d374cffc5}\index{Target@{Target}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!Target@{Target}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily \label{class_target_a100c79e93583d85cbcc36c1d374cffc5} 
+const sf\+::\+Sprite \& Target\+::get\+Sprite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the current target sprite. 
+
+\begin{DoxyReturn}{Returns}
+const sf\+::\+Sprite\& The target sprite. 
+\end{DoxyReturn}
+\Hypertarget{class_target_a71892dd21f55f54e22dc4f1163962edf}\index{Target@{Target}!isBomb@{isBomb}}
+\index{isBomb@{isBomb}!Target@{Target}}
+\doxysubsubsection{\texorpdfstring{isBomb()}{isBomb()}}
+{\footnotesize\ttfamily \label{class_target_a71892dd21f55f54e22dc4f1163962edf} 
+bool Target\+::is\+Bomb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the current target is a bomb. 
+
+\begin{DoxyReturn}{Returns}
+true if it is a bomb, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_target_8h}{Target.\+h}}\item 
+\mbox{\hyperlink{_target_8cpp}{Target.\+cpp}}\end{DoxyCompactItemize}

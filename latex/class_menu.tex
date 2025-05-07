@@ -1,0 +1,82 @@
+\doxysection{Menu Class Reference}
+\hypertarget{class_menu}{}\label{class_menu}\index{Menu@{Menu}}
+
+
+The \doxylink{class_menu}{Menu} class handles the display of the start menu and game-\/over screens.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}\label{class_menu_ad466dd83355124a6ed958430450bfe94} 
+{\bfseries Menu} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_menu}{Menu} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a65a8a8f3a498ad329d845b4ac45ad099}{init}} (const sf\+::\+Font \&font)
+\begin{DoxyCompactList}\small\item\em Initializes the menu texts using the provided font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a8b085f01f9fd3253fb9d2ed5d2154f64}{draw\+Menu}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Draws the start menu on the given window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a7349041d0f35e1c3de35cd82a889e2c3}{draw\+Game\+Over}} (sf\+::\+Render\+Window \&window, int score)
+\begin{DoxyCompactList}\small\item\em Draws the game-\/over screen with the final score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_menu}{Menu} class handles the display of the start menu and game-\/over screens. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_a7349041d0f35e1c3de35cd82a889e2c3}\index{Menu@{Menu}!drawGameOver@{drawGameOver}}
+\index{drawGameOver@{drawGameOver}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{drawGameOver()}{drawGameOver()}}
+{\footnotesize\ttfamily \label{class_menu_a7349041d0f35e1c3de35cd82a889e2c3} 
+void Menu\+::draw\+Game\+Over (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{, }\item[{int}]{score}{}\end{DoxyParamCaption})}
+
+
+
+Draws the game-\/over screen with the final score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The render window. \\
+\hline
+{\em score} & The final score. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_a8b085f01f9fd3253fb9d2ed5d2154f64}\index{Menu@{Menu}!drawMenu@{drawMenu}}
+\index{drawMenu@{drawMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{drawMenu()}{drawMenu()}}
+{\footnotesize\ttfamily \label{class_menu_a8b085f01f9fd3253fb9d2ed5d2154f64} 
+void Menu\+::draw\+Menu (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Draws the start menu on the given window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The render window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_a65a8a8f3a498ad329d845b4ac45ad099}\index{Menu@{Menu}!init@{init}}
+\index{init@{init}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_menu_a65a8a8f3a498ad329d845b4ac45ad099} 
+void Menu\+::init (\begin{DoxyParamCaption}\item[{const sf\+::\+Font \&}]{font}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the menu texts using the provided font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & The font to be used for text rendering. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}
